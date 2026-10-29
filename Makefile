@@ -31,6 +31,8 @@ endif
 SOURCES := $(wildcard src/*.cpp)
 OBJECTS := $(patsubst src/%.cpp,$(BUILD_DIR)/%.o,$(SOURCES))
 DEPS := $(OBJECTS:.o=.d)
+CORE_OBJECTS := $(filter-out $(BUILD_DIR)/main.o,$(OBJECTS))
+TEST_OBJECT := $(BUILD_DIR)/test_core.o
 
 .PHONY: all clean test debug help
 
@@ -48,9 +50,15 @@ $(BUILD_DIR) $(BIN_DIR):
 debug: CXXFLAGS := -std=c++17 -O0 -g -Wall -Wextra -Wpedantic -MMD -MP
 debug: clean all
 
-test: all
+$(TEST_OBJECT): tests/test_core.cpp | $(BUILD_DIR)
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $< -o $@
+
+$(TEST_TARGET): $(CORE_OBJECTS) $(TEST_OBJECT) | $(BIN_DIR)
+	$(CXX) $(LDFLAGS) $^ $(LDLIBS) -o $@
+
+test: all $(TEST_TARGET)
 	$(TARGET) --version
-	$(TARGET) help
+	$(TEST_TARGET)
 
 clean:
 	rm -rf $(BUILD_DIR) $(BIN_DIR)
@@ -60,4 +68,3 @@ help:
 	@echo "Set NO_OPENMP=1 to build the sequential fallback."
 
 -include $(DEPS)
-
