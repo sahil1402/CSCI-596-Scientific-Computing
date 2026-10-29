@@ -17,4 +17,3 @@ else()
     target_compile_definitions(harbortune PRIVATE HARBORTUNE_NO_OPENMP)
     message(WARNING "OpenMP was not found; building the sequential fallback")
 endif()
-

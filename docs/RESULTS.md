@@ -91,4 +91,3 @@ depth, wave set, discretization, and equal metric weights. Higher-order methods,
 site-specific bathymetry, nonlinear processes, uncertainty analysis, and
 professional engineering review would be required before drawing conclusions
 about an actual location.
-

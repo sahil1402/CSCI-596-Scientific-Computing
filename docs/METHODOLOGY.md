@@ -88,4 +88,3 @@ speedup, and efficiency are exported.
 
 The loose wave-speed threshold accounts for the intentionally diffusive
 first-order method, while the measured result is normally substantially closer.
-

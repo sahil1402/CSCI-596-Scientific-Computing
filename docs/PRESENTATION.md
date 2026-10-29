@@ -35,4 +35,3 @@ eventually limited by overhead and available CPU resources.
 > entrances can reduce elevation while increasing current, so the best design
 > depends on the chosen metric and wave scenario. This is an educational
 > screening model rather than a real harbor certification tool.
-

@@ -67,4 +67,3 @@ python3 scripts/animate_simulation.py results/data/simulation \
 
 Generated files are ignored by Git by default. Copy selected, reviewed results
 into `docs/images/` if they are intended to appear in the repository.
-
