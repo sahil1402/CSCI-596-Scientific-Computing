@@ -1,0 +1,26 @@
+# Build products
+build/
+bin/
+*.o
+*.dSYM/
+
+# Generated experiment outputs
+results/data/*
+results/figures/*
+results/animations/*
+!results/data/.gitkeep
+!results/figures/.gitkeep
+!results/animations/.gitkeep
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.matplotlib/
+
+# Editor and operating-system files
+.DS_Store
+.idea/
+.vscode/
+
