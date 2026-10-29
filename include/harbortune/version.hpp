@@ -1,4 +1,3 @@
 #pragma once
 
-#define HARBORTUNE_VERSION "0.1.0"
-
+#define HARBORTUNE_VERSION "1.0.0"

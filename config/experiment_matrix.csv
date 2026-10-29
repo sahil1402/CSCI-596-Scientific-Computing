@@ -1,0 +1,6 @@
+wave,kind,amplitude_m,period_s,pulse_center_s,pulse_sigma_s
+short,periodic,0.25,20,,
+medium,periodic,0.25,30,,
+long,periodic,0.25,45,,
+pulse,gaussian_pulse,0.35,,16,4.5
+
