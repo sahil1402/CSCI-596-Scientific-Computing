@@ -187,6 +187,20 @@ robust score is its worst composite score across the four scenarios.
 The regression test executable also exercises case parsing, geometry masks,
 solver stability, sweep size, ranking size, and parallel equivalence.
 
+## Reference results
+
+The checked reference run passed all verification tests, identified the
+center/narrow layout as the best design under the predefined robust score, and
+measured 3.13× speedup with eight OpenMP threads. These are controlled
+simulation results, not real-harbor recommendations.
+
+![HarborTune design score heatmap](docs/images/design_score_heatmap.png)
+
+![HarborTune elevation-current tradeoff](docs/images/elevation_current_tradeoff.png)
+
+See [docs/RESULTS.md](docs/RESULTS.md) for the configuration, tables,
+interpretation, limitations, animation, and raw reference-result links.
+
 ## Repository structure
 
 ```text
@@ -215,6 +229,7 @@ constraints. Conclusions apply only to the controlled numerical experiments.
 - [Formal project proposal](specs/HarborTune.md)
 - [Numerical and experimental methodology](docs/METHODOLOGY.md)
 - [Reproducibility guide](docs/REPRODUCIBILITY.md)
+- [Reference results](docs/RESULTS.md)
 - [One-minute presentation outline](docs/PRESENTATION.md)
 
 ## References
@@ -227,4 +242,3 @@ constraints. Conclusions apply only to the controlled numerical experiments.
    Problems](https://nctr.pmel.noaa.gov/benchmark/index.html).
 4. R. J. LeVeque, *Finite Volume Methods for Hyperbolic Problems*, Cambridge
    University Press, 2002.
-

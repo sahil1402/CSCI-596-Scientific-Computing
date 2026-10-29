@@ -1,0 +1,7 @@
+check,value,expected,relative_error,tolerance,passed
+wave_speed,14.1487050961,14.0071410359,0.0101065634876,0.12,1
+finite_stable_solution,1,1,0,0,1
+mirror_peak_elevation,0.092831060534,0.092831060534,0,1e-10,1
+mirror_entrance_speed,0.116350680306,0.116350680306,0,1e-10,1
+mirror_mean_energy,0.00539985388833,0.00539985388833,6.42507561076e-16,1e-10,1
+sequential_parallel_agreement,0,0,0,1e-12,1

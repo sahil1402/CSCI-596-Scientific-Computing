@@ -1,0 +1,16 @@
+rank,position,width,robust_score,mean_score,worst_normalized_peak,worst_normalized_speed
+1,center,narrow,0.840335,0.774346,0.730964,1.28936
+2,left-center,narrow,0.984861,0.804034,0.943268,1.46297
+3,right-center,narrow,0.984861,0.804034,0.943268,1.46297
+4,center,medium,1,1,1,1
+5,right,narrow,1.11174,0.897909,0.998295,1.52838
+6,left,narrow,1.11174,0.897909,0.998295,1.52838
+7,left-center,medium,1.28034,1.0662,1.36578,1.30955
+8,right-center,medium,1.28034,1.0662,1.36578,1.30955
+9,center,wide,1.40679,1.32172,1.3117,1.09927
+10,left,medium,1.49116,1.23992,1.4401,1.33733
+11,right,medium,1.49116,1.23992,1.4401,1.33733
+12,left-center,wide,1.73594,1.44347,1.78421,1.40525
+13,right-center,wide,1.73594,1.44347,1.78421,1.40525
+14,left,wide,1.9092,1.66279,1.97429,1.35862
+15,right,wide,1.9092,1.66279,1.97429,1.35862
